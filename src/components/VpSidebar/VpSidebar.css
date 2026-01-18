@@ -1,0 +1,111 @@
+:root {
+  --bg-sidebar: #f8f9fb;
+  --bg-hover: #e6e9ef;
+  --border: #dcdfe6;
+  --text: #2f2f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  margin-top: var(--header-height);   
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  padding: 10px;
+  transition: width 0.2s ease;
+}
+
+/* Menu item */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  margin-bottom: 4px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  position: relative;
+}
+
+.sidebar a:hover {
+  background: var(--bg-hover);
+}
+
+/* Icon */
+.icon {
+  font-size: 18px;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 20px;
+ 
+}
+
+/* =========================
+   📱 PHONE (icons only)
+   ========================= */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 60px;
+    padding: 8px;
+  }
+
+  .sidebar .text {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  /* Tooltip (Zoho style) */
+  .sidebar a:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 65px;
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+/* =========================
+   📲 TABLET
+   ========================= */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .sidebar {
+    width: 180px;
+  }
+}
+
+/* =========================
+   🖥️ DESKTOP
+   ========================= */
+@media (min-width: 1025px) {
+  .sidebar {
+    width: 220px;
+  }
+}

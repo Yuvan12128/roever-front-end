@@ -1,0 +1,51 @@
+/* ======================
+   TOP HEADER (Zoho style)
+   ====================== */
+.topbar {
+  height: 56px;
+  background: #ffffff;
+  border-bottom: 1px solid #dcdfe6;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+}
+
+.top-left .college-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+/* Avatar */
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Main content spacing (header height adjust) */
+.main {
+  padding: 20px;
+}

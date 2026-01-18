@@ -1,0 +1,78 @@
+.students-page {
+  background: #fff;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.page-header h2 {
+  margin: 0;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background: #e0e7ff;
+  border: none;
+  padding: 4px 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Filter */
+.filter-bar {
+  margin-bottom: 12px;
+}
+
+.filter-bar input {
+  width: 250px;
+  padding: 6px 8px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background: #f8f9fb;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+  }
+}
