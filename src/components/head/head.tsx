@@ -7,7 +7,7 @@ const Head = () => {
       {/* Left side */}
       <div className="top-left">
         <span className="college-name">
-          ABC College of Engineering
+          THANTHAI HANS ROEVER COLLEGE OF ARTS & SCIENCE
         </span>
       </div>
 
