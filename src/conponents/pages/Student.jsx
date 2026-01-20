@@ -3,6 +3,19 @@ import "./Student.css";
 import { useState } from "react";
 
 const Student = () => {
+  // post student
+
+  const [addStudent,setAddStudent]=useState({
+    rollNo:"",
+    name:"",
+    department:"",
+    year:"",
+    section:""
+  })
+
+
+
+  // student fetch
   const [rollNo, setRollNo] = useState("");
   const [student, setStudent] = useState([]);
   const [error, setError] = useState("");
