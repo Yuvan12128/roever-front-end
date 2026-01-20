@@ -1,4 +1,4 @@
-import './head.css'
+import "./Head.css";
 
 const Head = () => {
   return (

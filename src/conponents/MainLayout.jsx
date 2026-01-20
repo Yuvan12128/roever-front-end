@@ -1,5 +1,5 @@
 
-import Head from './head/head';
+import Head from './head/Head';
 import VpSidebar from './VpSidebar/VpSidebar';
 
 const MainLayout = () => {

@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import MainLayout from "./components/MainLayout"
-import Students from "./components/pages/Students"
-import Dashboard from "./components/pages/Dashboard"
-
+import MainLayout from "./conponents/MainLayout"
+import Students from "./conponents/pages/Student"
+import Dashboard from "./conponents/pages/Dashboard"
 
 function App() {
  
 
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -19,6 +19,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </>
   )
 }
 

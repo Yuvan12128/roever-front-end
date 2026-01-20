@@ -2,7 +2,7 @@
    TOP HEADER (Zoho style)
    ====================== */
 .topbar {
-  height: 56px;
+  height: 100px;
   background: #ffffff;
   border-bottom: 1px solid #dcdfe6;
   display: flex; 
